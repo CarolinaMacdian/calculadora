@@ -125,7 +125,7 @@ body {
   overflow: hidden;
 }
 
-.calculator__display {
+.calculatorDisplay {
   background-color: #3b0031;
   color: #fff;
   font-size: 1.714285714em;
@@ -133,22 +133,22 @@ body {
   text-align: right;
 }
 
-.calculator__keys {
+.calculatorKeys {
   background-color: #999;
   display: grid;
   grid-gap: 1px;
   grid-template-columns: repeat(4, 1fr);
 }
 
-.calculator__keys > * {
+.calculatorKeys > * {
   background-color: #fff;
   padding: 0.5em 1.25em;
   position: relative;
   text-align: center;
 }
 
-.calculator__keys > *:active::before,
-.calculator__keys > .is-depressed::before {
+.calculatorKeys > *:active::before,
+.calculatorKeys > .is-depressed::before {
   background-color: rgba(0, 0, 0, 0.2);
   bottom: 0;
   box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5) inset;
@@ -161,11 +161,11 @@ body {
   z-index: 1;
 }
 
-.key--operator {
+.keyOperator {
   background-color: #eee;
 }
 
-.key--equal {
+.keyEqual {
   background-image: linear-gradient(to bottom, #fe6ad4, #ff33e0);
   grid-column: -2;
   grid-row: 2 / span 4;
